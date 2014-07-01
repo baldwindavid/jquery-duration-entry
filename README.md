@@ -1,4 +1,4 @@
-# Duration Entry
+# jquery-duration-entry
 
 This is an easy way to slap some hour, minute and seconds inputs onto a page and have them auto-update a "total seconds" input. It may or may not do more in the future. This is handy for saving durations in seconds, but with user-friendly input of separate fields.
 
