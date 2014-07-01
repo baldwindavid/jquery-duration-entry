@@ -21,4 +21,4 @@ Call the `durationEntry` method on the total seconds input...
 
     $(".duration").durationEntry();
 
-The total seconds input is automatically hidden. The hour, minute and second fields will be loaded up with the appropriate values if total seconds has a value.
+In practice, you'll likely want to make the total seconds input hidden. The bindings are bi-directional and the hour, minute and second fields will be automatically filled in on page load based on the value of the total seconds input. Thus, if you have a saved value for total seconds, your edit form will be automatically setup.

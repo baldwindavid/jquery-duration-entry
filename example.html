@@ -13,17 +13,14 @@
     <script>
       $(document).ready(function(){
         $(".duration").durationEntry();
-
-        $("#hours, #minutes, #seconds").on("change", function(){
-          $("#display-seconds").text($("#total-seconds").val() + " seconds");
-        });
-
-        $("#display-seconds").text($("#total-seconds").val() + " seconds");
       });
     </script>
   </head>
   <body>
+    <h3>Total Seconds</h3>
     <input id="total-seconds" class="duration" value="3717" data-duration-hours="#hours" data-duration-minutes="#minutes" data-duration-seconds="#seconds" />
+
+    <h3>Duration Entry</h3>
     <input id="hours" /> hrs. <input id="minutes" /> mins. <input id="seconds" /> secs.
 
     <h3 id="display-seconds"></h3>
