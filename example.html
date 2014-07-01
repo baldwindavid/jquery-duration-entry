@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="moment.js"></script>
+    <script src="jquery-duration-entry.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $(".duration").durationEntry();
+
+        $("#hours, #minutes, #seconds").on("change", function(){
+          $("#display-seconds").text($("#total-seconds").val() + " seconds");
+        });
+
+        $("#display-seconds").text($("#total-seconds").val() + " seconds");
+      });
+    </script>
+  </head>
+  <body>
+    <input id="total-seconds" class="duration" value="3717" data-duration-hours="#hours" data-duration-minutes="#minutes" data-duration-seconds="#seconds" />
+    <input id="hours" /> hrs. <input id="minutes" /> mins. <input id="seconds" /> secs.
+
+    <h3 id="display-seconds"></h3>
+  </body>
+</html>
