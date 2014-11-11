@@ -31,7 +31,7 @@
         updateFromTotalSeconds: function(){
           var duration = moment.duration(parseInt($el.val()), 'seconds');
 
-          var hours_duration = (duration.hours() > 0) ? parseInt(duration.asHours()) : "";
+          var hours_duration = (parseInt(duration.asHours()) > 0) ? parseInt(duration.asHours()) : "";
           $hours.val(hours_duration);
 
           var minutes_duration = (duration.minutes() > 0) ? duration.minutes() : "";
